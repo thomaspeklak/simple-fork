@@ -1,36 +1,34 @@
 {
-    "name": "simple-fork",
-    "preferGlobal": "true",
-    "version": "0.0.0",
-    "author": "Thomas Peklak <thomas.peklak@gmail.com>",
-    "description": "a website performance monitor that leverages window.performance.timing",
-    "contributors": [
-        {
-            "name": "Thomas Peklak",
-            "email": "thomas.peklak@gmail.com"
-        }
-    ],
-    "scripts": {
-    },
-    "main": "./index.js",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "keywords": [
-        "server",
-        "web",
-        "performance",
-        "monitor"
-    ],
-    "dependencies" : {
-    },
-    "devDependencies": {
-    },
-    "bundleDependencies": [
-    ],
-    "license": "MIT",
-    "engine": {
-        "node": ">=0.8"
+  "name": "simple-fork",
+  "preferGlobal": "true",
+  "version": "0.0.0",
+  "author": "Thomas Peklak <thomas.peklak@gmail.com>",
+  "description": "a website performance monitor that leverages window.performance.timing",
+  "contributors": [
+    {
+      "name": "Thomas Peklak",
+      "email": "thomas.peklak@gmail.com"
     }
+  ],
+  "scripts": {},
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "server",
+    "web",
+    "performance",
+    "monitor"
+  ],
+  "dependencies": {
+    "nodemon": "~0.7.8"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.8"
+  }
 }

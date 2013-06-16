@@ -10,7 +10,7 @@ module.exports = function (path, shutdownMessage) {
     path = join(__dirname, "..", path);
     var job = production ?
         cp.fork(path) :
-        cp.fork(join(__dirname, "..", "node_modules", "nodemon"), [path], {
+        cp.fork(join(__dirname, "node_modules", "nodemon"), [path], {
             cwd: __dirname
         });
 
