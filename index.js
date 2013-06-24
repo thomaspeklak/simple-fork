@@ -6,12 +6,11 @@ var production = process.env.NODE_ENV === "production" ? true : false;
 
 //fork a child process depending on the environment
 
-module.exports = function (path, shutdownMessage) {
-    path = join(__dirname, "..", path);
+module.exports = function (path, args, shutdownMessage) {
     var job = production ?
-        cp.fork(path) :
-        cp.fork(join(__dirname, "node_modules", "nodemon"), [path], {
-            cwd: __dirname
+        cp.fork(path, args) :
+        cp.fork(join(__dirname, "node_modules", "nodemon", "nodemon.js"), [path + " " + args.join(" ")], {
+            cwd: path
         });
 
     job.on("message", function (message) {
